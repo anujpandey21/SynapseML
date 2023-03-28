@@ -1,0 +1,26 @@
+{
+	"name": "relationship-shtncwdrju",
+	"properties": {
+		"Name": "relationship-shtncwdrju",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "State",
+		"ToTableName": "Location",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "StateId",
+				"ToColumnName": "LocationStateId"
+			}
+		],
+		"RelationshipType": 0,
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "9b7c32c1-3b05-4e6e-9d16-cc32687c465f"
+	},
+	"type": "RELATIONSHIP"
+}

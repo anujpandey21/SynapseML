@@ -1,0 +1,26 @@
+{
+	"name": "relationship-vynqapubwg",
+	"properties": {
+		"Name": "relationship-vynqapubwg",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "City",
+		"ToTableName": "Employee",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "LastEditedBy",
+				"ToColumnName": "EmployeeId"
+			}
+		],
+		"RelationshipType": 0,
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "b1b068dd-8294-448b-b155-2964d3458c12"
+	},
+	"type": "RELATIONSHIP"
+}

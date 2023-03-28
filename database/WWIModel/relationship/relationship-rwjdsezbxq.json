@@ -1,0 +1,26 @@
+{
+	"name": "relationship-rwjdsezbxq",
+	"properties": {
+		"Name": "relationship-rwjdsezbxq",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "City",
+		"ToTableName": "State",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CityId",
+				"ToColumnName": "StateId"
+			}
+		],
+		"RelationshipType": 0,
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "da1f4adc-e404-4f3c-a47f-8d4fe8974cba"
+	},
+	"type": "RELATIONSHIP"
+}

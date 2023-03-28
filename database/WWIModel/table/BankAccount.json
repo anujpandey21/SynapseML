@@ -1,0 +1,129 @@
+{
+	"name": "BankAccount",
+	"properties": {
+		"Name": "BankAccount",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "WWIModel",
+			"DatabaseId": null
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "BankAccountId",
+					"Description": "The unique identifier of a Bank Account.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "BankAccount.cdm.json/BankAccount",
+						"Name": "BankAccountId"
+					}
+				},
+				{
+					"Name": "BankAccountToken",
+					"Description": "A token for a Bank Account is used to point to a secure (typically encrypted) location where details of the bank account can be found.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "BankAccount.cdm.json/BankAccount",
+						"Name": "BankAccountToken"
+					}
+				},
+				{
+					"Name": "BankAccountNote",
+					"Description": "A note, comment or additional information regarding the Bank Account.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "BankAccount.cdm.json/BankAccount",
+						"Name": "BankAccountNote"
+					}
+				}
+			],
+			"ColumnSetEntityName": "0d622785-aa0a-4992-9f13-07d430f85f3b",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+				"FormatType": "parquet",
+				"SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+				"Properties": {
+					"path": "abfss://defaultcontainer@stgaccountmipsynapse.dfs.core.windows.net/WWIModel/BankAccount",
+					"FormatTypeSetToDatabaseDefault": true
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://defaultcontainer@stgaccountmipsynapse.dfs.core.windows.net/WWIModel/BankAccount",
+				"Properties": {
+					"LinkedServiceName": "syn-newmips-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"BankAccountId\":{\"entity\":\"BankAccount.cdm.json/BankAccount\",\"name\":\"BankAccountId\"},\"BankAccountToken\":{\"entity\":\"BankAccount.cdm.json/BankAccount\",\"name\":\"BankAccountToken\"},\"BankAccountNote\":{\"entity\":\"BankAccount.cdm.json/BankAccount\",\"name\":\"BankAccountNote\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"BankAccount\",\"path\":\"BankAccount.cdm.json/BankAccount\"},\"description\":\"The Bank Account of a Customer or Customer Account.\",\"primaryKey\":[\"BankAccountId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"BankAccount.cdm.json/BankAccount\",\"name\":\"BankAccountId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Bank Account.\",\"isNullable\":false,\"name\":\"BankAccountId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"BankAccount.cdm.json/BankAccount\",\"name\":\"BankAccountToken\"},\"dataType\":\"integer\",\"description\":\"A token for a Bank Account is used to point to a secure (typically encrypted) location where details of the bank account can be found.\",\"isNullable\":false,\"name\":\"BankAccountToken\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"BankAccount.cdm.json/BankAccount\",\"name\":\"BankAccountNote\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A note, comment or additional information regarding the Bank Account.\",\"isNullable\":true,\"name\":\"BankAccountNote\"}]}}}",
+			"Description": "The Bank Account of a Customer or Customer Account.",
+			"DisplayFolderInfo": "{\"name\":\"Transaction\",\"colorCode\":\"#005A61\"}",
+			"PrimaryKeys": "BankAccountId",
+			"spark.sql.sources.provider": "parquet",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"BankAccountId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BankAccountToken\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BankAccountNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 2,
+		"ObjectId": "04708877-ab1e-437e-9d22-2703cb23a918",
+		"Description": "The Bank Account of a Customer or Customer Account."
+	},
+	"type": "TABLE"
+}
