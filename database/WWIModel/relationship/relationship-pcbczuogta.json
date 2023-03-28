@@ -1,0 +1,29 @@
+{
+	"name": "relationship-pcbczuogta",
+	"properties": {
+		"Name": "relationship-pcbczuogta",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Channel",
+		"ToTableName": "Transaction",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ChannelId",
+				"ToColumnName": "DistributionChannelId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Channel.cdm.json/Channel\",\"toEntity\":\"Transaction.cdm.json/Transaction\",\"joinPairs\":[{\"fromAttribute\":\"ChannelId\",\"toAttribute\":\"DistributionChannelId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "e0448cff-c827-41d9-bb1b-96e311073154"
+	},
+	"type": "RELATIONSHIP"
+}

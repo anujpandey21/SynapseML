@@ -1,0 +1,29 @@
+{
+	"name": "relationship-xalqcnqbmt",
+	"properties": {
+		"Name": "relationship-xalqcnqbmt",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Transaction",
+		"ToTableName": "Order",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "TransactionId",
+				"ToColumnName": "OrderId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Transaction.cdm.json/Transaction\",\"toEntity\":\"Order.cdm.json/Order\",\"joinPairs\":[{\"fromAttribute\":\"TransactionId\",\"toAttribute\":\"OrderId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "02e3cf13-edef-4898-ba05-53beeee8c008"
+	},
+	"type": "RELATIONSHIP"
+}

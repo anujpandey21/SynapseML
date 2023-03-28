@@ -1,0 +1,188 @@
+{
+	"name": "EmployeeEmail",
+	"properties": {
+		"Name": "EmployeeEmail",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "WWIModel",
+			"DatabaseId": null
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "EmployeeId",
+					"Description": "The unique identifier of an Employee.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "EmployeeEmail.cdm.json/EmployeeEmail",
+						"Name": "EmployeeId"
+					}
+				},
+				{
+					"Name": "EmailTypeId",
+					"Description": "The unique identifier of an Email Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "EmployeeEmail.cdm.json/EmployeeEmail",
+						"Name": "EmailTypeId"
+					}
+				},
+				{
+					"Name": "EmailAddress",
+					"Description": "The employee email address.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "EmployeeEmail.cdm.json/EmployeeEmail",
+						"Name": "EmailAddress"
+					}
+				},
+				{
+					"Name": "PeriodStartTimestamp",
+					"Description": "The period start timestamp associated with the information.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "EmployeeEmail.cdm.json/EmployeeEmail",
+						"Name": "PeriodStartTimestamp"
+					}
+				},
+				{
+					"Name": "PeriodEndTimestamp",
+					"Description": "The period end timestamp associated with the information.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "EmployeeEmail.cdm.json/EmployeeEmail",
+						"Name": "PeriodEndTimestamp"
+					}
+				},
+				{
+					"Name": "EmployeeEmailNote",
+					"Description": "A note, comment or additional information regarding the employee email address.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "EmployeeEmail.cdm.json/EmployeeEmail",
+						"Name": "EmployeeEmailNote"
+					}
+				}
+			],
+			"ColumnSetEntityName": "519b8965-e0c0-4051-92b3-3d12d34bbc81",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+				"FormatType": "parquet",
+				"SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+				"Properties": {
+					"path": "abfss://defaultcontainer@stgaccountmipsynapse.dfs.core.windows.net/WWIModel/EmployeeEmail",
+					"FormatTypeSetToDatabaseDefault": true
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://defaultcontainer@stgaccountmipsynapse.dfs.core.windows.net/WWIModel/EmployeeEmail",
+				"Properties": {
+					"LinkedServiceName": "syn-newmips-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"EmployeeId\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"EmployeeId\"},\"EmailTypeId\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"EmailTypeId\"},\"EmailAddress\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"EmailAddress\"},\"PeriodStartTimestamp\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"PeriodStartTimestamp\"},\"PeriodEndTimestamp\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"PeriodEndTimestamp\"},\"EmployeeEmailNote\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"EmployeeEmailNote\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"EmployeeEmail\",\"path\":\"EmployeeEmail.cdm.json/EmployeeEmail\"},\"description\":\"The employee email address(s) of the associated email type for the indicated period.\",\"primaryKey\":[\"EmployeeId\",\"EmailTypeId\",\"EmailAddress\",\"PeriodStartTimestamp\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"EmployeeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Employee.\",\"isNullable\":false,\"name\":\"EmployeeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"EmailTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Email Type.\",\"isNullable\":false,\"name\":\"EmailTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"EmailAddress\"},\"dataType\":\"string\",\"dataTypeLength\":256,\"description\":\"The employee email address.\",\"isNullable\":false,\"name\":\"EmailAddress\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"PeriodStartTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The period start timestamp associated with the information.\",\"isNullable\":false,\"name\":\"PeriodStartTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"PeriodEndTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The period end timestamp associated with the information.\",\"isNullable\":true,\"name\":\"PeriodEndTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"EmployeeEmail.cdm.json/EmployeeEmail\",\"name\":\"EmployeeEmailNote\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A note, comment or additional information regarding the employee email address.\",\"isNullable\":true,\"name\":\"EmployeeEmailNote\"}]}}}",
+			"Description": "The employee email address(s) of the associated email type for the indicated period.",
+			"DisplayFolderInfo": "{\"name\":\"Human Resources & Payroll\",\"colorCode\":\"#EA279F\"}",
+			"PrimaryKeys": "EmployeeId,EmailTypeId,EmailAddress,PeriodStartTimestamp",
+			"spark.sql.sources.provider": "parquet",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"EmployeeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmailTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmailAddress\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodStartTimestamp\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodEndTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"EmployeeEmailNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 2,
+		"ObjectId": "9f028638-7d0c-4acb-9c13-e99a10c250b2",
+		"Description": "The employee email address(s) of the associated email type for the indicated period."
+	},
+	"type": "TABLE"
+}

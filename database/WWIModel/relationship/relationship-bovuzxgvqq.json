@@ -1,0 +1,29 @@
+{
+	"name": "relationship-bovuzxgvqq",
+	"properties": {
+		"Name": "relationship-bovuzxgvqq",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Employee",
+		"ToTableName": "EmployeeTelephoneNumber",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "EmployeeId",
+				"ToColumnName": "EmployeeId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Employee.cdm.json/Employee\",\"toEntity\":\"EmployeeTelephoneNumber.cdm.json/EmployeeTelephoneNumber\",\"joinPairs\":[{\"fromAttribute\":\"EmployeeId\",\"toAttribute\":\"EmployeeId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "92064600-e4c2-46b5-95a2-f7bb2c520d58"
+	},
+	"type": "RELATIONSHIP"
+}

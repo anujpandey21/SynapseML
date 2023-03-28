@@ -1,0 +1,29 @@
+{
+	"name": "relationship-ebrqbtsphj",
+	"properties": {
+		"Name": "relationship-ebrqbtsphj",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Communication",
+		"ToTableName": "Document",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CommunicationId",
+				"ToColumnName": "DocumentId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Communication.cdm.json/Communication\",\"toEntity\":\"Document.cdm.json/Document\",\"joinPairs\":[{\"fromAttribute\":\"CommunicationId\",\"toAttribute\":\"DocumentId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "8befaa3b-78d0-4bc5-b8ed-700286dc0e5f"
+	},
+	"type": "RELATIONSHIP"
+}

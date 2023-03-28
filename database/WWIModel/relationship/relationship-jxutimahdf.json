@@ -1,0 +1,29 @@
+{
+	"name": "relationship-jxutimahdf",
+	"properties": {
+		"Name": "relationship-jxutimahdf",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Customer",
+		"ToTableName": "Transaction",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CustomerId",
+				"ToColumnName": "CustomerId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Customer.cdm.json/Customer\",\"toEntity\":\"Transaction.cdm.json/Transaction\",\"joinPairs\":[{\"fromAttribute\":\"CustomerId\",\"toAttribute\":\"CustomerId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "ffb85c3d-6625-4300-9a77-d88de3d9c3a9"
+	},
+	"type": "RELATIONSHIP"
+}

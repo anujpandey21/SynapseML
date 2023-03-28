@@ -1,0 +1,26 @@
+{
+	"name": "relationship-xbyvzmgoed",
+	"properties": {
+		"Name": "relationship-xbyvzmgoed",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "City",
+		"ToTableName": "Location",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CityId",
+				"ToColumnName": "CityId"
+			}
+		],
+		"RelationshipType": 0,
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "48f7ec2f-f1f7-4a88-9c87-43812a55c321"
+	},
+	"type": "RELATIONSHIP"
+}

@@ -1,0 +1,29 @@
+{
+	"name": "relationship-ppaugfgtfa",
+	"properties": {
+		"Name": "relationship-ppaugfgtfa",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Employee",
+		"ToTableName": "EmployeeNamePreference",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "EmployeeId",
+				"ToColumnName": "EmployeeId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Employee.cdm.json/Employee\",\"toEntity\":\"EmployeeNamePreference.cdm.json/EmployeeNamePreference\",\"joinPairs\":[{\"fromAttribute\":\"EmployeeId\",\"toAttribute\":\"EmployeeId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "e81704a4-4c82-43cd-a64e-373fe7289dc2"
+	},
+	"type": "RELATIONSHIP"
+}
