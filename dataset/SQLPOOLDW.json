@@ -1,0 +1,17 @@
+{
+	"name": "SQLPOOLDW",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "SalesLT",
+			"table": "Address"
+		},
+		"sqlPool": {
+			"referenceName": "sqlpnewmip",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

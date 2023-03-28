@@ -1,0 +1,180 @@
+{
+	"name": "VendorType",
+	"properties": {
+		"Name": "VendorType",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "WWIModel",
+			"DatabaseId": null
+		},
+		"Partitioning": {
+			"PartitionFunctionType": null,
+			"Keys": null
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "VendorTypeId",
+					"Description": "The unique identifier of a Vendor Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "VendorType.cdm.json/VendorType",
+						"Name": "VendorTypeId"
+					}
+				},
+				{
+					"Name": "VendorTypeName",
+					"Description": "The name of the Vendor Type.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "VendorType.cdm.json/VendorType",
+						"Name": "VendorTypeName"
+					}
+				},
+				{
+					"Name": "VendorTypeDescription",
+					"Description": "The description of the Vendor Type.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "VendorType.cdm.json/VendorType",
+						"Name": "VendorTypeDescription"
+					}
+				},
+				{
+					"Name": "LastEditedBy",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					}
+				},
+				{
+					"Name": "ValidFrom",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					}
+				},
+				{
+					"Name": "ValidTo",
+					"Description": "",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "41edfba7-e7fc-493b-9b54-ef2f33c50e1b",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+				"FormatType": "parquet",
+				"SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+				"Properties": {
+					"path": "abfss://defaultcontainer@stgaccountmipsynapse.dfs.core.windows.net/WWIModel/VendorType",
+					"FormatTypeSetToDatabaseDefault": true
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://defaultcontainer@stgaccountmipsynapse.dfs.core.windows.net/WWIModel/VendorType",
+				"Properties": {
+					"LinkedServiceName": "syn-newmips-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"VendorTypeId\":{\"entity\":\"VendorType.cdm.json/VendorType\",\"name\":\"VendorTypeId\"},\"VendorTypeName\":{\"entity\":\"VendorType.cdm.json/VendorType\",\"name\":\"VendorTypeName\"},\"VendorTypeDescription\":{\"entity\":\"VendorType.cdm.json/VendorType\",\"name\":\"VendorTypeDescription\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"name\":\"VendorType\",\"description\":\"A categorization of Vendors based upon whether they manufacture and supply the product (OEM), add value to the product and supply it (VAR), resell the product (Reseller), wholesale the product (Wholesaler) etc.\\n\\nEx :\\n- OEM\\n- VAR\\n- Reseller\\n- Wholesaler\",\"baseEntityReference\":{\"name\":\"VendorType\",\"path\":\"VendorType.cdm.json/VendorType\"},\"primaryKey\":[\"VendorTypeId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"VendorType.cdm.json/VendorType\",\"name\":\"VendorTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Vendor Type.\",\"isNullable\":false,\"name\":\"VendorTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"VendorType.cdm.json/VendorType\",\"name\":\"VendorTypeName\"},\"dataType\":\"string\",\"dataTypeLength\":256,\"description\":\"The name of the Vendor Type.\",\"isNullable\":true,\"name\":\"VendorTypeName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"VendorType.cdm.json/VendorType\",\"name\":\"VendorTypeDescription\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"The description of the Vendor Type.\",\"isNullable\":true,\"name\":\"VendorTypeDescription\"},{\"type\":\"New\",\"dataType\":\"integer\",\"description\":\"\",\"isNullable\":false,\"name\":\"LastEditedBy\"},{\"type\":\"New\",\"dataType\":\"timestamp\",\"description\":\"\",\"isNullable\":false,\"name\":\"ValidFrom\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"New\",\"dataType\":\"timestamp\",\"description\":\"\",\"isNullable\":false,\"name\":\"ValidTo\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"}]}}}",
+			"Description": "A categorization of Vendors based upon whether they manufacture and supply the product (OEM), add value to the product and supply it (VAR), resell the product (Reseller), wholesale the product (Wholesaler) etc.\n\nEx :\n- OEM\n- VAR\n- Reseller\n- Wholesaler",
+			"DisplayFolderInfo": "{\"name\":\"Vendor\",\"colorCode\":\"#1C508C\"}",
+			"PrimaryKeys": "VendorTypeId",
+			"spark.sql.sources.provider": "parquet",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorTypeName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"VendorTypeDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"LastEditedBy\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ValidFrom\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ValidTo\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 2,
+		"ObjectId": "6f4c8cee-9764-41ed-ab9e-6eab983a1f35",
+		"Description": "A categorization of Vendors based upon whether they manufacture and supply the product (OEM), add value to the product and supply it (VAR), resell the product (Reseller), wholesale the product (Wholesaler) etc.\n\nEx :\n- OEM\n- VAR\n- Reseller\n- Wholesaler"
+	},
+	"type": "TABLE"
+}

@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-custstgacct--syn-newmips-stgaccountmipsynapse",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/225f1de1-c18b-452f-9c59-220bd04ee33f/resourceGroups/rg-newmip/providers/Microsoft.Storage/storageAccounts/stgaccountmipsynapse",
+		"groupId": "dfs",
+		"fqdns": [
+			"stgaccountmipsynapse.dfs.core.windows.net"
+		]
+	}
+}

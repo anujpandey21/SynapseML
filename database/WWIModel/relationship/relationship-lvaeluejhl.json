@@ -1,0 +1,29 @@
+{
+	"name": "relationship-lvaeluejhl",
+	"properties": {
+		"Name": "relationship-lvaeluejhl",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "State",
+		"ToTableName": "Document",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "StateId",
+				"ToColumnName": "StateId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"State.cdm.json/State\",\"toEntity\":\"Document.cdm.json/Document\",\"joinPairs\":[{\"fromAttribute\":\"StateId\",\"toAttribute\":\"StateId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "d58e435d-dbe1-4b14-84a3-737c4961d9c1"
+	},
+	"type": "RELATIONSHIP"
+}

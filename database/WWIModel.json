@@ -1,0 +1,27 @@
+{
+	"name": "WWIModel",
+	"properties": {
+		"Name": "WWIModel",
+		"EntityType": "DATABASE",
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"ConsumerGoods\",\"Version\":\"1.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://defaultcontainer@stgaccountmipsynapse.dfs.core.windows.net/WWIModel",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "syn-newmips-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 22,
+		"ObjectId": "bcf4404e-9933-40b9-abe8-9c95fc17d3bc"
+	},
+	"type": "DATABASE"
+}

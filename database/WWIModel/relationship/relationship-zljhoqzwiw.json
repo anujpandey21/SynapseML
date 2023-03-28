@@ -1,0 +1,26 @@
+{
+	"name": "relationship-zljhoqzwiw",
+	"properties": {
+		"Name": "relationship-zljhoqzwiw",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "WWIModel"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "VendorType",
+		"ToTableName": "Employee",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "LastEditedBy",
+				"ToColumnName": "EmployeeId"
+			}
+		],
+		"RelationshipType": 0,
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "c2d2fbb7-49c1-4858-845e-5738b51a3d21"
+	},
+	"type": "RELATIONSHIP"
+}
