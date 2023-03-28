@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "syn-newmips"
+		},
+		"DataLakeGen2_accountKey": {
+			"value": ""
+		},
+		"ONPREMSQL_connectionString": {
+			"value": ""
+		},
+		"ONPREMSQLSERVER_connectionString": {
+			"value": ""
+		},
+		"syn-newmips-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:syn-newmips.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"DataLakeGen2_properties_typeProperties_url": {
+			"value": "https://stgaccountmipsynapse.dfs.core.windows.net/"
+		},
+		"syn-newmips-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://stgaccountmipsynapse.dfs.core.windows.net"
+		}
+	}
+}
