@@ -22,7 +22,7 @@
 			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Employee.cdm.json/Employee\",\"toEntity\":\"Transaction.cdm.json/Transaction\",\"joinPairs\":[{\"fromAttribute\":\"EmployeeId\",\"toAttribute\":\"ApprovedByEmployeeId\"}]}}"
 		},
 		"PublishStatus": "PUBLISHED",
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "18bec51c-05cc-4438-8853-88a2a6375c60"
 	},
 	"type": "RELATIONSHIP"

@@ -157,9 +157,10 @@
 			"PrimaryKeys": "VendorId,EmployeeId,VendorEmployeeRelationshipTypeId",
 			"spark.sql.sources.provider": "parquet",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmployeeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorEmployeeRelationshipTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodStartDate\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodEndDate\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorEmployeeRelationshipNote\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}"
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmployeeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorEmployeeRelationshipTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodStartDate\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodEndDate\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorEmployeeRelationshipNote\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
+			"spark.sql.partitionProvider": "catalog"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "e80563b6-7896-4200-8b6b-fdd150737674",
 		"Description": ""
 	},

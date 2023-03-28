@@ -22,7 +22,7 @@
 			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Employee.cdm.json/Employee\",\"toEntity\":\"EmployeeLanguageUsage.cdm.json/EmployeeLanguageUsage\",\"joinPairs\":[{\"fromAttribute\":\"EmployeeId\",\"toAttribute\":\"EmployeeId\"}]}}"
 		},
 		"PublishStatus": "PUBLISHED",
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "a1e6905a-ff46-492c-be6c-4eb1b9f2b48c"
 	},
 	"type": "RELATIONSHIP"

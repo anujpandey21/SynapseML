@@ -142,9 +142,10 @@
 			"PrimaryKeys": "VendorAccountBankAccount,BankAccountId",
 			"spark.sql.sources.provider": "parquet",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorAccountBankAccount\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BankAccountId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodStart\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodEnd\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorAccountBankAccountNote\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}"
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorAccountBankAccount\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BankAccountId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodStart\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodEnd\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorAccountBankAccountNote\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
+			"spark.sql.partitionProvider": "catalog"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "6417e097-85cc-4802-82cc-77f95297ef8f",
 		"Description": ""
 	},

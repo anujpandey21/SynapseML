@@ -180,7 +180,7 @@
 			"spark.sql.sources.schema.numParts": "1",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"EmployeeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmailTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmailAddress\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodStartTimestamp\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodEndTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"EmployeeEmailNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "9f028638-7d0c-4acb-9c13-e99a10c250b2",
 		"Description": "The employee email address(s) of the associated email type for the indicated period."
 	},

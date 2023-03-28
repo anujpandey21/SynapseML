@@ -313,7 +313,7 @@
 			"spark.sql.sources.schema.numParts": "1",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"CommunicationId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"CommunicationStartTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationEndTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationQueueTime\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationHoldTime\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InboundOutboundCommunicationIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationText\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationMethodId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationTypeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CommunicationPriorityId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"IsoLanguageId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}}]}"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "542700ac-5c7b-40b8-b187-b20d9531ee84",
 		"Description": "A communication to/from one or more party(s)."
 	},

@@ -180,7 +180,7 @@
 			"spark.sql.sources.schema.numParts": "1",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"EmployeeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"NamePreferenceId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodStartDate\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PeriodEndDate\",\"type\":\"date\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmployeeNameId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"EmployeeNamePreferenceNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "b2efb6df-0c73-499f-8beb-f0e3c5ef5824",
 		"Description": "The employee's specified preference for using a particular name."
 	},

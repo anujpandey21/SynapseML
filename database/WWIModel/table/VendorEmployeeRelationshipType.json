@@ -110,9 +110,10 @@
 			"PrimaryKeys": "VendorEmployeeRelationshipTypeId",
 			"spark.sql.sources.provider": "parquet",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorEmployeeRelationshipTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorEmployeeRelationshipTypeName\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorEmployeeRelationshipTypeDescription\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}"
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorEmployeeRelationshipTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorEmployeeRelationshipTypeName\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorEmployeeRelationshipTypeDescription\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
+			"spark.sql.partitionProvider": "catalog"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "20bb0ff1-cc9c-4499-93d9-dd5a7a3fb903",
 		"Description": ""
 	},

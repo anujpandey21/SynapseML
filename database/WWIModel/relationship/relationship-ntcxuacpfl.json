@@ -22,7 +22,7 @@
 			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Vendor.cdm.json/Vendor\",\"toEntity\":\"Item.cdm.json/Item\",\"joinPairs\":[{\"fromAttribute\":\"VendorId\",\"toAttribute\":\"VendorId\"}]}}"
 		},
 		"PublishStatus": "PUBLISHED",
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "ce9e9a4a-5cbb-484d-8eab-cefc498f639a"
 	},
 	"type": "RELATIONSHIP"

@@ -110,9 +110,10 @@
 			"PrimaryKeys": "EmployeeTypeId",
 			"spark.sql.sources.provider": "parquet",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"EmployeeTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmployeeTypeName\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmployeeTypeDescription\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}"
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"EmployeeTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmployeeTypeName\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"EmployeeTypeDescription\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}",
+			"spark.sql.partitionProvider": "catalog"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "3aa095e3-ce3a-4a1f-a27e-988eaae96c38",
 		"Description": ""
 	},

@@ -125,9 +125,10 @@
 			"PrimaryKeys": "VendorDeliveryMethodId,VendorIId",
 			"spark.sql.sources.provider": "parquet",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorDeliveryMethodId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorIId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"LocationId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"DeliveryMethodId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}]}"
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorDeliveryMethodId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorIId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"LocationId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"DeliveryMethodId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}]}",
+			"spark.sql.partitionProvider": "catalog"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "46442e02-81cf-4e44-b264-678cb1f278b8",
 		"Description": ""
 	},

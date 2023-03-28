@@ -121,7 +121,7 @@
 			"spark.sql.sources.schema.numParts": "1",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"BankAccountId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BankAccountToken\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BankAccountNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "04708877-ab1e-437e-9d22-2703cb23a918",
 		"Description": "The Bank Account of a Customer or Customer Account."
 	},

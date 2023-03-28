@@ -22,7 +22,7 @@
 			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Communication.cdm.json/Communication\",\"toEntity\":\"Document.cdm.json/Document\",\"joinPairs\":[{\"fromAttribute\":\"CommunicationId\",\"toAttribute\":\"DocumentId\"}]}}"
 		},
 		"PublishStatus": "PUBLISHED",
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "8befaa3b-78d0-4bc5-b8ed-700286dc0e5f"
 	},
 	"type": "RELATIONSHIP"

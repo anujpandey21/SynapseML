@@ -170,9 +170,10 @@
 			"PrimaryKeys": "VendorTypeId",
 			"spark.sql.sources.provider": "parquet",
 			"spark.sql.sources.schema.numParts": "1",
-			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorTypeName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"VendorTypeDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"LastEditedBy\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ValidFrom\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ValidTo\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}}]}"
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"VendorTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"VendorTypeName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"VendorTypeDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"LastEditedBy\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ValidFrom\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"ValidTo\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}}]}",
+			"spark.sql.partitionProvider": "catalog"
 		},
-		"ObjectVersion": 2,
+		"ObjectVersion": 3,
 		"ObjectId": "6f4c8cee-9764-41ed-ab9e-6eab983a1f35",
 		"Description": "A categorization of Vendors based upon whether they manufacture and supply the product (OEM), add value to the product and supply it (VAR), resell the product (Reseller), wholesale the product (Wholesaler) etc.\n\nEx :\n- OEM\n- VAR\n- Reseller\n- Wholesaler"
 	},

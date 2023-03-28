@@ -22,7 +22,7 @@
 			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"DeliveryMethod.cdm.json/DeliveryMethod\",\"toEntity\":\"Document.cdm.json/Document\",\"joinPairs\":[{\"fromAttribute\":\"DeliveryMethodId\",\"toAttribute\":\"DeliveryMethodId\"}]}}"
 		},
 		"PublishStatus": "PUBLISHED",
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "8d83206d-09f7-4393-a09a-97b3630da300"
 	},
 	"type": "RELATIONSHIP"

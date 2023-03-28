@@ -216,7 +216,7 @@
 			"spark.sql.sources.schema.numParts": "1",
 			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"BankId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"BankName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BankDBNumber\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BankAbaNumber\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BankTelephoneNumber\",\"type\":\"decimal(15,0)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BankFaxNumber\",\"type\":\"decimal(15,0)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BankEmailAddress\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DunsNumber\",\"type\":\"decimal(9,0)\",\"nullable\":true,\"metadata\":{}}]}"
 		},
-		"ObjectVersion": 1,
+		"ObjectVersion": 2,
 		"ObjectId": "8cd232dc-3532-48af-9873-ab7e7ebf57a9",
 		"Description": "A financial institution providing financial services such as Letters of Credit etc."
 	},
